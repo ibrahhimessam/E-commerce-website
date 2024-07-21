@@ -1,0 +1,135 @@
+:root {
+    --main-color: #fcb700;
+    --dark-color: #222222;
+    --parg-color: #666666;
+    --dark-red: #d01418;
+    --border-color: #6666662a;
+    --name-items: #0066c0;
+}
+
+.sec_form{
+    margin: 240px 0 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.form_container{
+    width: 350px;
+    background-color: #fff;
+    box-shadow: rgb(0, 0, 0 , 0.35) 0 5px 15px ;
+    border-radius: 10px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+@media (max-width:767px) {
+    .sec_form{
+        margin: 80px 0 30px;
+        padding: 0 20px;  
+    }
+    .form_container{
+        width: 100%;
+        box-shadow:none;
+        border-radius: 0;
+
+    }
+}
+
+.title{
+    color: var(--dark-color);
+    text-align: center;
+    margin: 10px 30px;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form input{
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    outline: 0;
+    padding: 12px 15px ;
+}
+.form input:focus{
+    border-color: var(--main-color);
+}
+.page_link{
+    margin: 0;
+    text-align: right;
+
+}
+.page_link .page-link-lable{
+    color: var(--parg-color);
+    font-size: 13px;
+    text-transform: capitalize;
+    transition: 0.3s ease;
+}
+.page_link .page-link-lable:hover{
+    color: #000;
+}
+
+.form-btn{
+    padding: 10px 15px ;
+    border: 0;
+    outline: 0;
+    border-radius: 6px;
+    background-color: var(--main-color);
+    font-size: 18px ;
+    text-transform: capitalize;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.20) 0 3px 10px;
+    font-weight: bold;
+}
+.sigin-up-lable{
+    margin: 10px 0 0;
+    font-size: 12px;
+    color: var(--parg-color);
+    text-transform: capitalize;
+    /* text-align: center; */
+}
+.sigin-up-lable .sigin-up-link{
+    font-size: 14px ;
+    margin-left: 4px;
+    text-decoration: underline;
+    color: var(--main-color);
+}
+.buttons_container{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 15px;
+}
+
+.buttons_container i{
+    font-size: 22px;
+
+}
+.apple-login-button,
+.google-login-button{
+    border-radius: 6px;
+    padding: 10px 15px;
+    box-shadow: rgb(0, 0, 0 , 0.16) 0px 10px 36px 0px,
+    rgb(0, 0, 0 , 0.06) 0px 0px 0px 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    gap: 10px;
+    text-transform: capitalize;
+}
+.apple-login-button{
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #000;
+}
+.google-login-button{
+    border: 2px solid #c5c5c57d;
+    color: var(--dark-color);
+}
